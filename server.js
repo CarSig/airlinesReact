@@ -12,8 +12,7 @@ const routes = require("./routes/api");
 
 // database link
 
-const MONGDB_URI =
-  "mongodb+srv://lovro:fairintheair@fita.y5xxf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const MONGDB_URI = "link goes here";
 
 //connection to database
 mongoose.connect(MONGDB_URI, {

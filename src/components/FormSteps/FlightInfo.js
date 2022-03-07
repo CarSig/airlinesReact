@@ -7,9 +7,6 @@ import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import AirplaneTicketIcon from "@mui/icons-material/AirplaneTicket";
 import axios from "axios";
 
-const url = "https://aerodatabox.p.rapidapi.com/airports/search/term";
-const apiHost = "aerodatabox.p.rapidapi.com";
-
 const FlightInfo = ({ values, handleChange, setValues, formErrors, classes }) => {
   const [fetchedDepartureAirport, setfetchedDepartureAirport] = useState([]);
   const [fetchedArrivalAirport, setfetchedArrivalAirport] = useState([]);
@@ -87,6 +84,10 @@ const FlightInfo = ({ values, handleChange, setValues, formErrors, classes }) =>
     });
   };
 
+  const url = "url goes here";
+  const apiHost = "api host goes here";
+  const apiKey = "api key goes here";
+
   const getData = async (query, airportHook) => {
     var options = {
       method: "GET",
@@ -94,7 +95,7 @@ const FlightInfo = ({ values, handleChange, setValues, formErrors, classes }) =>
       params: { q: `${query}`, limit: "5" },
       headers: {
         "x-rapidapi-host": apiHost,
-        "x-rapidapi-key": "!!!!!!!!!!!!!!!!!!!----Here comes api key----not sharing mine sry :)!!!!",
+        "x-rapidapi-key": apiKey,
         "Access-Control-Allow-Origin": "*",
       },
     };

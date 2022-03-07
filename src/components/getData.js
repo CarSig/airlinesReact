@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const url = "https://aerodatabox.p.rapidapi.com/airports/search/term";
-const apiHost = "aerodatabox.p.rapidapi.com";
-const apiKey = "78ec0313a5msh0262145fd50b130p1afc1fjsn3c1924d58127";
+const url = "url goes here";
+const apiHost = "api host goes here";
+const apiKey = "api key goes here";
 
 export const getData = async (query, airportHook) => {
   var options = {
@@ -73,11 +73,11 @@ function fetchAirportInfo(airportHook) {
 async function getData(query) {
   const options = {
     method: "GET",
-    url: "https://aerodatabox.p.rapidapi.com/airports/search/term",
+    url: "limk goes here",
     params: { q: `${query}`, limit: "5" },
     headers: {
       "x-rapidapi-host": "aerodatabox.p.rapidapi.com",
-      "x-rapidapi-key": "78ec0313a5msh0262145fd50b130p1afc1fjsn3c1924d58127",
+      "x-rapidapi-key": "api key goes here",
     },
   };
 
