@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "url goes here";
+const url = "url goes here!";
 const apiHost = "api host goes here";
 const apiKey = "api key goes here";
 
